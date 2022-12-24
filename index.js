@@ -19,6 +19,7 @@ app.all('/', (req, res) => {
     res.send('Yo!')
 })
 // Connecting App to the Localhost
-app.listen(3000, () => {
+app.listen(3000,async () => {
+	await connect()
     console.log("Connected to http://localhost:" + 3000);
 });
